@@ -70,7 +70,7 @@ export default function Login() {
           <span
             className="text-blue-400 cursor-pointer"
             onClick={() =>
-              navigate(role === "parent" ? "/signup-parent" : "/signup-worker")
+              navigate("/login")
             }
           >
             Create Account
