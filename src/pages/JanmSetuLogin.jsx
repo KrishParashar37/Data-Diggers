@@ -59,7 +59,7 @@ export default function JanmSetuLogin() {
   };
 
   return (
-    <div className="app-container">
+    <div className="app-container app-hero-bg">
       <div className="auth-card">
         {/* Branding */}
         <div className="auth-logo">

@@ -42,7 +42,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<JanmSetuLogin />} />
+        <Route path="/landing" element={<Landing />} />
         <Route path="/login" element={<JanmSetuLogin />} />
         <Route path="/parent" element={<ParentDashboard />} />
         <Route path="/parent/create" element={<ParentDashboard />} />

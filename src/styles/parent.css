@@ -1,19 +1,46 @@
-/* Parent dashboard specific */
+.child-summary p {
+  font-size: 14px;
+  color: #334155;
+}
 
-.status-done {
-  color: #16a34a;
+.vaccine-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.vaccine-row:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
   font-weight: 600;
 }
 
-.status-pending {
-  color: #d97706;
-  font-weight: 600;
+.badge.done {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge.pending {
+  background-color: #fff7ed;
+  color: #c2410c;
+}
+
+.badge.scheduled {
+  background-color: #eff6ff;
+  color: #2563eb;
 }
 
 .qr-box {
-  margin-top: 12px;
-  padding: 12px;
   border: 1px dashed #cbd5f5;
-  border-radius: 10px;
+  border-radius: 12px;
+  padding: 14px;
   width: fit-content;
+  margin-top: 12px;
 }
