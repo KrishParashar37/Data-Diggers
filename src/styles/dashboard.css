@@ -1,85 +1,72 @@
-/* ===== Dashboard Base ===== */
+/* ===== Dashboard Layout ===== */
 
 .dashboard {
   min-height: 100vh;
-  background-color: #0f172a; /* slate-900 */
-  color: #e5e7eb;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  padding: 28px;
+  background-color: #f8fafc;
 }
 
-.dashboard-header {
-  height: 64px;
-  background-color: #020617; /* slate-950 */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 24px;
-  border-bottom: 1px solid #1e293b;
-}
-
-.dashboard-title {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.logout-btn {
-  background-color: #dc2626;
-  border: none;
-  padding: 8px 14px;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.logout-btn:hover {
-  background-color: #b91c1c;
-}
-
-.dashboard-content {
-  padding: 32px;
-}
-
-.section-title {
-  font-size: 16px;
+.dashboard h2 {
+  font-size: 22px;
   margin-bottom: 16px;
-  color: #cbd5f5;
+  color: #0f172a;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
+.dashboard h3 {
+  font-size: 16px;
+  margin: 20px 0 10px;
+  color: #334155;
 }
+
+/* ===== Cards ===== */
 
 .card {
-  background-color: #020617;
-  border: 1px solid #1e293b;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 10px;
-  padding: 20px;
-}
-
-.card h3 {
-  font-size: 15px;
-  margin-bottom: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
 .card p {
-  font-size: 13px;
-  color: #94a3b8;
+  margin: 6px 0;
+  color: #334155;
+  font-size: 14px;
 }
 
-.primary-btn {
-  margin-top: 12px;
-  background-color: #2563eb;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  color: white;
+/* ===== Buttons ===== */
+
+button {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
   border-radius: 6px;
+  border: 1px solid #2563eb;
+  background-color: #2563eb;
+  color: white;
   cursor: pointer;
 }
 
-.primary-btn:hover {
+button:hover {
   background-color: #1d4ed8;
 }
+
+/* Secondary button */
+button.secondary {
+  background-color: #ffffff;
+  color: #2563eb;
+}
+
+/* ===== Inputs ===== */
+
+input[type="date"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+

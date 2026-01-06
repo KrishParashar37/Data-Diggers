@@ -29,26 +29,29 @@
 // }
 
 
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Landing from "./pages/Landing";
-import ParentDashboard from "./pages/ParentDashboard";
-import AshaDashboard from "./pages/AshaDashboard";
+import Landing from './pages/Landing'
+import JanmSetuLogin from './pages/JanmSetuLogin'
+import ParentDashboard from './pages/ParentDashboard'
+import AshaDashboard from './pages/AshaDashboard'
+import AshaScan from './pages/AshaScan'
+import AshaChildView from './pages/AshaChildView'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Landing */}
         <Route path="/" element={<Landing />} />
-
-        {/* Dashboards */}
+        <Route path="/login" element={<JanmSetuLogin />} />
         <Route path="/parent" element={<ParentDashboard />} />
+        <Route path="/parent/create" element={<ParentDashboard />} />
+        <Route path="/parent/child/:id" element={<ParentDashboard />} />
         <Route path="/asha" element={<AshaDashboard />} />
-
-        {/* Fallback */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/asha/scan" element={<AshaScan />} />
+        <Route path="/asha/child/:childId" element={<AshaChildView />} />
       </Routes>
     </BrowserRouter>
   );
 }
+

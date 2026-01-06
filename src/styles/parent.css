@@ -1,29 +1,19 @@
-.child-card p {
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-
-.list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.list li {
-  padding: 6px 0;
-  font-size: 14px;
-}
+/* Parent dashboard specific */
 
 .status-done {
-  color: #22c55e;
+  color: #16a34a;
   font-weight: 600;
 }
 
-.status-upcoming {
-  color: #facc15;
+.status-pending {
+  color: #d97706;
   font-weight: 600;
 }
 
-.muted {
-  color: #94a3b8;
-  font-size: 13px;
+.qr-box {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px dashed #cbd5f5;
+  border-radius: 10px;
+  width: fit-content;
 }

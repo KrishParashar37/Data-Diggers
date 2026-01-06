@@ -1,0 +1,139 @@
+/* ===== Auth Card ===== */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 32px 28px;
+  border: 1px solid #e2e8f0;
+}
+
+/* ===== Branding ===== */
+.auth-logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-logo h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #0d9488;
+}
+
+.auth-logo p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* ===== Section Title ===== */
+.auth-title {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+/* ===== Role Toggle ===== */
+.role-toggle {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 24px;
+}
+
+.role-toggle button {
+  flex: 1;
+  border: none;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: transparent;
+  color: #475569;
+  cursor: pointer;
+}
+
+.role-toggle button.active {
+  background: #ffffff;
+  color: #0d9488;
+  border: 1px solid #e2e8f0;
+}
+
+/* ===== Form Fields ===== */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+.form-group span {
+  color: #dc2626;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0d9488;
+}
+
+/* ===== Primary Button ===== */
+.primary-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0d9488;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.primary-btn:hover {
+  background-color: #0f766e;
+}
+
+/* ===== Footer Links ===== */
+.auth-footer {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+.auth-footer a {
+  font-weight: 600;
+}
+
+/* ===== Trust Footer ===== */
+.trust-bar {
+  margin-top: 28px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #64748b;
+}  
