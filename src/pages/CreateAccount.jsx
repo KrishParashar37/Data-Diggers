@@ -4,10 +4,9 @@ import { auth } from "../services/firebase";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
 export default function CreateAccount() {
-  const [searchParams] = useSearchParams();
-  const initialRole = searchParams.get("role"); // parent | asha
+  const [params] = useSearchParams();
+  const role = params.get("role"); // parent | asha
 
-  const [role, setRole] = useState(initialRole);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -17,37 +16,21 @@ export default function CreateAccount() {
     if (!role) navigate("/");
   }, [role, navigate]);
 
-//   const handleSignup = async () => {
-//     try {
-//       await createUserWithEmailAndPassword(auth, email, password);
-//       navigate(role === "parent" ? "/parent" : "/asha");
-//     } catch (err) {
-//       alert(err.message);
-//     }
-//   };
-
   const handleSignup = async () => {
-  try {
-    await createUserWithEmailAndPassword(auth, email, password);
-
-    if (role === "parent") {
-      window.location.replace("/parent");
-    } else {
-      window.location.replace("/asha");
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+      window.location.replace(role === "parent" ? "/parent" : "/asha");
+    } catch (err) {
+      alert(err.message);
     }
-  } catch (err) {
-    alert(err.message);
-  }
-};
-
+  };
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 flex items-center justify-center">
-      <div className="w-full max-w-md bg-slate-800 p-6 rounded-lg">
-
-        <h1 className="text-xl font-semibold mb-4 text-center">
+      <div className="bg-slate-800 p-6 rounded w-full max-w-md">
+        <h2 className="text-xl font-semibold mb-4 text-center">
           {role === "parent" ? "Parent Registration" : "Vaccinator Registration"}
-        </h1>
+        </h2>
 
         <input
           type="email"
@@ -58,7 +41,7 @@ export default function CreateAccount() {
 
         <input
           type="password"
-          placeholder="Password (min 6 characters)"
+          placeholder="Password (min 6 chars)"
           className="w-full mb-4 p-2 rounded bg-slate-700"
           onChange={(e) => setPassword(e.target.value)}
         />
@@ -73,4 +56,3 @@ export default function CreateAccount() {
     </div>
   );
 }
-

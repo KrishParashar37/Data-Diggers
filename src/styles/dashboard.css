@@ -1,0 +1,85 @@
+/* ===== Dashboard Base ===== */
+
+.dashboard {
+  min-height: 100vh;
+  background-color: #0f172a; /* slate-900 */
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.dashboard-header {
+  height: 64px;
+  background-color: #020617; /* slate-950 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.dashboard-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.logout-btn {
+  background-color: #dc2626;
+  border: none;
+  padding: 8px 14px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #b91c1c;
+}
+
+.dashboard-content {
+  padding: 32px;
+}
+
+.section-title {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #cbd5f5;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.primary-btn {
+  margin-top: 12px;
+  background-color: #2563eb;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #1d4ed8;
+}
